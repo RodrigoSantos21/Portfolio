@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color:#46193a;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.btnMobile{
+    display: none;
+    position: absolute;
+    z-index: 18934;
+    margin-top: 9px;
+}
+
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 111;
+}
+
+.nav-bar{
+    background-color: rgba(66, 10, 19, 0.9);
+    display: flex;
+    border-bottom: 3px solid white;
+    backdrop-filter: blur(10px);
+}
+
+
+a{
+    text-decoration: none;
+    color: #03989e;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.nav-bar-item{
+    text-transform: uppercase;
+    transition: all 300ms ease;
+    padding: 20px;
+    margin: 0 auto;
+    display: block;
+}
+
+nav a:hover{
+    color: yellow; 
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+section{
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+}
+
+.main-content{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+    margin-top: 250px;
+    color: #0dd0f3;
+    height: 300px;
+}
+
+.main-content p{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.main-content h1{
+    font-size: 80px;
+    text-transform: uppercase;
+}
+
+.name::after{
+    content: 'I';
+    margin-left: 5px;
+    opacity: 1px;
+    animation: blink 0.7s infinite;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 200px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 19px;
+    border-radius: 9px;
+    width: 200px;
+    height: 50px;
+    background-color: #59429d;;
+    color: #ffffff;
+    box-shadow: 0 0 3px 1px black;
+}
+
+.btn:hover{
+    background-color: black;
+    color: rgb(122, 226, 24);
+    box-shadow: 0 0 3px 1px rgb(229, 255, 0);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 570px;
+}
+
+#sobre-mim{
+    margin-top:300px;
+    align-items: center;
+}
+
+.descricao{
+    width: 90%;
+}
+
+.descricao p{
+    margin-top: 15px;
+}
+
+.sobre-mim{
+    /*color:rgb(88, 207, 9);*/
+    color: #0dd0f3;
+    font-size: 32px;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 70%;
+    align-items: center;
+}
+
+.meu-curriculo{
+    display: flex;
+    align-items: center;
+    border-radius: 9px;
+    border: none;
+    margin: 0 auto;
+    background-color: #59429d;;
+    color: #ffffff;
+    box-shadow: 0 0 3px 1px black;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 70px;
+}
+
+.meu-curriculo:hover{
+    background-color: black;
+    color: rgb(122, 226, 24);
+    box-shadow: 0 0 3px 1px rgb(229, 255, 0);
+    transform: translateY(-7px);
+}
+
+#projetos .container{
+    margin-top: 100px;
+}
+
+.conteudo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #0dd0f3;
+}
+
+.projetos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.projeto-unico{
+    background-color: rgba(255, 0, 76, 0.911);
+    height: 150px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.projeto-unico:hover{
+    transform: scale(1.1);
+}
+
+.projeto-unico p{
+    font-size: 20px;
+    margin-top: 7px;
+}
+
+.link{
+    margin-top: 10px;
+}
+
+.projetos a{
+    color: rgb(250, 187, 70);
+    font-size: 50px;
+}
+
+
+.footer-container{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.container-contacts{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.container-contacts p{
+    color:#0dd0f3;
+}
+
+.contact{
+    font-size: 50px;
+    color: rgb(250, 187, 70);
+    padding: 5px;
+    border-radius:45%;
+}
+
+.footer p{
+    font-size: 30px;
+}
+
+@media (min-width: 50px) and (max-width: 640px){
+    .nav-bar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+    }
+
+    .nav-bar.active{
+        height: 100vh;
+        visibility: visible;
+    }
+
+    .main-content{
+        margin-top: 50px;
+    }
+
+    .btn{
+        margin-top: 4px;
+    }
+
+    .links{
+        margin-top: 30px;
+    }
+
+    .container{
+        flex-direction: column;
+        margin-top: 200px;
+        justify-content: flex-start;
+    }
+
+    .descricao{
+        width: 100%;
+    }
+
+    .sobre-mim{
+        font-size: 22px;
+        margin: 0 auto;
+    }
+
+    .descricao p{
+        margin-top: 15px;
+    }
+
+    #sobre-mim{
+        margin-top: 100px;
+    }
+
+    #projetos{
+        margin-top: 450px;
+    }
+
+    .conteudo{
+        margin-top: 200px !important;
+    }
+
+    .projetos{
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container{
+        padding-top: 100px;
+        margin-top: 350px;
+    }
+
+    .btnMobile{
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-button{
+        width: 2rem;
+        height: 2rem;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        align-items: center;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1000px){
+
+    
+    .btn{
+        margin-top: 100px;
+    }
+
+    .links{
+        margin-top: 30px;
+    }
+
+    .sobre-mim{
+        font-size: 25px;
+        margin: 0 auto;
+    }
+
+    .descricao p{
+        margin-top: 15px;
+    }
+
+    .container{
+        flex-direction: column-reverse;
+        margin-top: 270px;
+    }
+
+    .conteudo{
+        margin-top: 600px !important;
+    }
+
+    .projetos{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-container{
+        display: block;
+        padding-top: 300px;
+    }
+
+    .btnMobile{
+        display: none;
+    }
+}
+
+
+@keyframes blink {
+    0%, 100%{
+        opacity: 1;
+    }
+
+    50%{
+        opacity: 0;
+    }
+}
