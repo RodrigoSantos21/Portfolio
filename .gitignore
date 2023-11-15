@@ -2,3 +2,4 @@ doc/**/*.pdf
 *pdf
 .pdf
 Portfolio/*.pdf
+Portfolio/Portfolio/*.pdf
